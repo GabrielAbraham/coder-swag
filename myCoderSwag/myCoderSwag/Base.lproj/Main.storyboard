@@ -29,19 +29,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="B6Z-py-Pew">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="B6Z-py-Pew">
                                 <rect key="frame" x="0.0" y="69.5" width="375" height="533.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="148" id="osg-1o-Q9q" customClass="CategoryCell" customModule="myCoderSwag" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="148" id="osg-1o-Q9q" customClass="CategoryCell" customModule="myCoderSwag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="148"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="osg-1o-Q9q" id="hyU-2D-LiG">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="147.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="148"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="djc-Gp-3iF">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="147.5"/>
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="141.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2H8-Sh-he7">
                                                     <rect key="frame" x="109.5" y="60" width="156" height="28"/>
@@ -55,12 +55,12 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="djc-Gp-3iF" secondAttribute="bottom" constant="3" id="9dk-Td-ggM"/>
                                                 <constraint firstItem="2H8-Sh-he7" firstAttribute="centerX" secondItem="hyU-2D-LiG" secondAttribute="centerX" id="9ni-sN-ayD"/>
-                                                <constraint firstAttribute="bottom" secondItem="djc-Gp-3iF" secondAttribute="bottom" id="PiT-5A-bem"/>
                                                 <constraint firstAttribute="trailing" secondItem="djc-Gp-3iF" secondAttribute="trailing" id="XTM-T3-WBJ"/>
                                                 <constraint firstItem="djc-Gp-3iF" firstAttribute="leading" secondItem="hyU-2D-LiG" secondAttribute="leading" id="cia-iI-F4R"/>
                                                 <constraint firstItem="2H8-Sh-he7" firstAttribute="centerY" secondItem="hyU-2D-LiG" secondAttribute="centerY" id="ekT-gl-XRE"/>
-                                                <constraint firstItem="djc-Gp-3iF" firstAttribute="top" secondItem="hyU-2D-LiG" secondAttribute="top" id="xzB-Ap-TqU"/>
+                                                <constraint firstItem="djc-Gp-3iF" firstAttribute="top" secondItem="hyU-2D-LiG" secondAttribute="top" constant="3" id="kwL-jX-aoO"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
